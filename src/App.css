@@ -1,3 +1,7 @@
+.container {
+    display: inline;
+}
+
 h1 {
     color: lightgreen;
     text-align: center;
@@ -6,4 +10,8 @@ h1 {
 h2 {
     color: darkgreen;
     text-align: center;
+}
+
+img {
+    border: solid 2px green;
 }

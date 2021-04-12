@@ -4,10 +4,10 @@ import './App.css';
 
 function App () { 
    return (
-    <>
-    <h1>My Favourite Artists!</h1>
+    <div className="container">
+    <h1>Semhar & Natalie's Favourite Artist!</h1>
     <Artists />
-    </>
+    </div>
    )
 }
 
