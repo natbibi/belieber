@@ -6,7 +6,7 @@ import './App.css';
 function App () { 
    return (
     <div className="container">
-    <h1>Semhar & Natalie's Favourite Artist!</h1>
+    <h1>Justin Bieber</h1>
     <Artists />
     <Albums />
     </div>
