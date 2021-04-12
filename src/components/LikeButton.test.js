@@ -7,16 +7,16 @@ describe('LikeButton', () => {
         render(<LikeButton />)
     })
 
-    test('renders a button with a heart (💜) in it', () => {
+    test('renders a button with a heart (❤︎) in it', () => {
        let heartButton = screen.getByRole('switch')
-       expect(heartButton.textContent).toBe('💜')
+       expect(heartButton.textContent).toBe('❤︎')
     })
 
     test('toggles to a different heart emoji', () => {
         let heartButton = screen.getByRole('switch')
-        let initEmoji = '💜'
+        let initEmoji = heartButton.style.color
         userEvent.click(heartButton)
-        let clickEmoji = '💖'
+        let clickEmoji = heartButton.style.color
         expect(clickEmoji).not.toBe(initEmoji)
     })
 });
