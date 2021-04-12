@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LikeButton from './LikeButton'
 
 const AlbumCards = () => {
     const [album, setAlbum] = useState([
@@ -11,7 +12,7 @@ const AlbumCards = () => {
     ])
 
     const renderRows = () => {
-        return album.map(p => <tr><td>{p.name}</td><td><img src={p.img} /></td><td>{p.releaseDate}</td></tr>)
+        return album.map(p => <tr><td>{p.name} <LikeButton /> </td><td><img src={p.img} /></td><td>{p.releaseDate}</td></tr>)
     }
 
     return (
