@@ -12,22 +12,25 @@ const AlbumCards = () => {
     ])
 
     const renderRows = () => {
-        return album.map(p => <tr><td>{p.name} <LikeButton /> </td><td><img src={p.img} /></td><td>{p.releaseDate}</td></tr>)
+        return album.map(p =>
+            <div className="card col-3">
+                <img src={p.img} className="card-img-top" alt="Album Cover" />
+                <div className="card-body">
+                    <h5 className="card-title">{p.name}</h5>
+                    <p className="card-text">{p.releaseDate}</p>
+                    <LikeButton />
+                </div>
+            </div>
+
+
+            // <tr><td>{p.name} <LikeButton /> </td><td><img src={p.img} /></td><td>{p.releaseDate}</td></tr>)
+        )
     }
 
     return (
-        <table style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                {renderRows()}
-            </tbody>
-        </table>
+        <div className="row">
+            { renderRows()}
+        </div>
     );
 };
 
