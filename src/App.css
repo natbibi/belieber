@@ -1,17 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=News+Cycle&display=swap');
+/* font-family: 'Londrina Sketch', cursive;
+font-family: 'News Cycle', sans-serif; */
+
 .container {
     display: inline;
+    /* margin: 0.5rem; */
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 2rem;
+    margin: 0.5rem;
 }
 
 h1 {
     color: lightgreen;
     text-align: center;
+    font-family: 'News Cycle', sans-serif; 
 }
 
-h2 {
-    color: darkgreen;
-    text-align: center;
+p {
+    margin: 20px;
 }
 
 img {
     border: solid 2px green;
+}
+
+th {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.heart-like {
+    text-align: center;
 }
