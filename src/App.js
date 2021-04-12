@@ -1,5 +1,6 @@
 import React from 'react';
-import Artists from './Artists';
+import Artists from './components/Artists';
+import Albums from './components/Albums'
 import './App.css';
 
 function App () { 
@@ -7,6 +8,7 @@ function App () {
     <div className="container">
     <h1>Semhar & Natalie's Favourite Artist!</h1>
     <Artists />
+    <Albums />
     </div>
    )
 }
