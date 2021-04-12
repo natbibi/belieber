@@ -1,5 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Artists from './Artists';
+import './App.css';
 
-const App = () => <h1>Hello World!</h1>
+function App () { 
+   return (
+    <>
+    <h1>My Favourite Artists!</h1>
+    <Artists />
+    </>
+   )
+}
+
 
 export default App
