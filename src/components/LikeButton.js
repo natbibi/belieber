@@ -17,8 +17,8 @@ function LikeButton() {
     }
 
     return (
-        <div>
-            <span role="switch" onClick={handleLikeButton} style={{ fontSize: '5rem', color: liked ? 'lightgrey' : 'hotpink' }}>❤︎</span>
+        <div className="heart-like">
+            <span role="switch" onClick={handleLikeButton} style={{ fontSize: '5rem', color: liked ? 'lightgrey' : 'hotpink' }}><i class="far fa-heart"></i></span>
         </div>
     )
 }
