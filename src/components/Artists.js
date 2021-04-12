@@ -3,9 +3,7 @@ import React from 'react'
 function Artists() {
     return (
         <>
-            <h2>Artists</h2>
-            <p>Justin Drew Bieber, born March 1, 1994 is a Canadian singer-songwriter and multi-instrumentalist. Bieber was signed to RBMG Records in 2008. With Bieber’s debut EP My World, released in late 2009, Bieber became the first artist to have seven songs from a debut record chart on the Billboard Hot 100.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Justin_Bieber_in_2015.jpg" width="200px" />
+            <p>Teen-idol, Justin Bieber is a Canadian singer-songwriter. With sales of over 150 million records, Bieber is one of the world's best-selling music artists. At 16 years old, Bieber released his debut studio album My World 2.0 (2010), which contained the hit single “Baby”. The album debuted  the US Billboard 200, making Bieber the youngest solo male act to top the chart in 47 years.</p>
         </>
     )
 }
