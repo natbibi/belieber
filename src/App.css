@@ -8,6 +8,12 @@ font-family: 'News Cycle', sans-serif; */
     margin: auto;
 }
 
+.greeting-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     justify-content: space-evenly;
