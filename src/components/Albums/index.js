@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LikeButton from './LikeButton'
+import {LikeButton} from '..'
 
 const AlbumCards = () => {
     const [album, setAlbum] = useState([

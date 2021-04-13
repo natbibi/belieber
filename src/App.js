@@ -1,13 +1,13 @@
 import React from 'react';
-import Artists from './components/Artists';
-import Albums from './components/Albums'
+import { Bio, Albums, Greeting } from './components'
 import './App.css';
 
 function App () { 
    return (
     <div className="container">
-    <h1>Justin Bieber</h1>
-    <Artists />
+    
+    <Bio />
+    <Greeting />
     <Albums />
     </div>
    )
