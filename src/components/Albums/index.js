@@ -11,6 +11,9 @@ const AlbumCards = () => {
         { id: '63iWSELt9V1kV6RSMxN7Ii', name: 'Changes', img: "https://upload.wikimedia.org/wikipedia/en/1/16/Justin_Bieber_-_Changes.png", releaseDate: 2020, title: 'Intentions' },
         { id: '6mzpIm84OXCBxw6Tuhp1OA', name: 'Justice', img: "https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png", releaseDate: 2021, title: 'Peaches' }
     ])
+    // const [showLyrics, setShowLyrics] = useState()
+
+    // const toggleLyrics = () => setShowLyrics(prevState => !prevState)
 
     const renderRows = () => {
         return album.map(p =>
@@ -21,7 +24,8 @@ const AlbumCards = () => {
                     <p className="card-text">{p.releaseDate}</p>
                     <LikeButton name={p.name}/>
                     <Listen songId={p.id}/>
-                    <Lyrics title={p.title}/>
+                    <Lyrics title={p.title} />
+                    {/* {showLyrics ? <Lyrics title={p.title} close={toggleLyrics}/> : <button onClick={toggleLyrics}>Show me lyrics</button>} */}
                 </div>
             </div>
 
