@@ -9,12 +9,12 @@ const Listen = (props) => {
         async function listenToSong(){
             try {
 
-                let {data } = await axios.get(`https://api.spotify.com/v1/albums/${props.songId}`)
+                ///let {data } = await axios.get(`https://api.spotify.com/v1/albums/${props.songId}`)
 
-                console.log(data)
-                console.log(data.items)
+                // console.log(data)
+                // console.log(data.items)
                 
-                setListen(data.items[0].external_urls.spotify)
+                setListen(data.items)
 
             } catch (err) {
                 setError(err.message)
@@ -34,8 +34,8 @@ const Listen = (props) => {
     
     return (
         <>
-        <button onClick={openSpotifyPage}>listen </button>
-       
+        {/* <button onClick={openSpotifyPage}>listen </button>
+        */}
 
 
 

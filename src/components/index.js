@@ -4,3 +4,4 @@ export {default as Bio} from './Bio';
 export {default as Greeting } from './Greeting'
 export {default as Listen } from './Listen'
 export {default as Counter } from './Counter'
+export {default as Lyrics } from './Lyrics'
