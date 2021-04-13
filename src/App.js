@@ -1,16 +1,15 @@
 import React from 'react';
-import { Bio, Albums, Greeting, Counter } from './components'
+
 import './App.css';
+import { JBMusic } from './pages';
 
 function App () { 
    return (
     <div className="container">
-    
-    <Bio />
-    <Greeting />
-    <Counter />
-    {/* get info from like button componenet */}
-    <Albums />
+       
+
+       <JBMusic />
+
     </div>
    )
 }
