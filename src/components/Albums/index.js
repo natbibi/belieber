@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {LikeButton} from '..'
+import {LikeButton, Coun} from '..'
 
 const AlbumCards = () => {
     const [album, setAlbum] = useState([
@@ -23,7 +23,7 @@ const AlbumCards = () => {
             </div>
 
 
-            // <tr><td>{p.name} <LikeButton /> </td><td><img src={p.img} /></td><td>{p.releaseDate}</td></tr>)
+           
         )
     }
 

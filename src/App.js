@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bio, Albums, Greeting } from './components'
+import { Bio, Albums, Greeting, Counter } from './components'
 import './App.css';
 
 function App () { 
@@ -8,6 +8,8 @@ function App () {
     
     <Bio />
     <Greeting />
+    <Counter />
+    {/* get info from like button componenet */}
     <Albums />
     </div>
    )

@@ -8,9 +8,6 @@ function Greeting(){
 
 const handleInput = e => setNameInput(e.target.value)
 
-
-
-
 const handleFormSubmit = e => {
 e.preventDefault()
 setUsername(nameInput)
