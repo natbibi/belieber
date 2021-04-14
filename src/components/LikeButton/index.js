@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Counter } from '..'
 
 function LikeButton(props) {
     let [liked, setLiked] = useState('false')
@@ -11,9 +12,12 @@ function LikeButton(props) {
         setLiked(!liked)
         setLikeCounter(likeCounter + 1)
 
-        let albumName = props.name
-        console.log(albumName)
-        console.log(++likeCounter)
+       let albumName = props.name
+            console.log(albumName)
+            console.log(++likeCounter)
+        
+            let totalLikes = (++likeCounter )
+            console.log(totalLikes)
 
     }
 
