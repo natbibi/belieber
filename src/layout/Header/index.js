@@ -9,8 +9,9 @@ function Header(){
     return(
         <nav>
             <BackButton />
-            <NavLink exact to="/" activeClassName="current">Home</NavLink>
+            <NavLink exact to="/albums" activeClassName="current">Albums</NavLink>
             <NavLink to="/lyrics" activeClassName="current">Lyrics</NavLink>
+            <NavLink to="/photos" activeClassName="current">Photos</NavLink>
             <NavLink to="/bio" activeClassName="current">Bio</NavLink>
         </nav>
 
