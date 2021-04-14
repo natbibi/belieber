@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import Loader from "react-loader-spinner";
 
 function Lyrics(props){
     const [error, setError ] = useState()
-    const [showLyrics, setShowLyrics] = useState()
+    const [showLyrics, setShowLyrics] = useState(false)
     const [hideLyrics, setHideLyrics] = useState()
     
 
@@ -25,24 +26,29 @@ function Lyrics(props){
     //     e.preventDefault()
     //     setShowLyrics(showLyrics)
     // }
-    const toggleLyrics = (e) => {
-        e.stopPropagation()
-        setShowLyrics('')
-        setHideLyrics('')
-    }
+    // const toggleLyrics = (e) => {
+    //     e.stopPropagation()
+    //     setShowLyrics('')
+    //     setHideLyrics('')
+    // }
     // const hideToggleLyrics = () => setShowLyrics(!showLyrics)
- 
+    
+    function displayLyrics(){
+        
+        return setShowLyrics(true)
+        
+         
+    } 
 
 
-    return (
-    <div>
-        {/* {showLyrics ? toggleLyrics : <button onClick={toggleLyrics}>Show me lyrics</button>} */}
-        {/* <span onClick={hideToggleLyrics} style={{cursor: "pointer"}}> hide lyrics</span> */}
-        <span onClick={toggleLyrics} style={{cursor: "pointer"}}> show lyrics </span>
-        {/* {showLyrics && <button onClick={toggleLyrics} >Show me lyrics</button>} */}
-        <p>{ toggleLyrics ?  showLyrics : hideLyrics}</p>
-    </div>
-    )
+    if(showLyrics == true) { return (<p>{showLyrics}</p>)
+    } else { 
+        return (
+        <div>
+        <button onClick={displayLyrics} >show lyrics</button>
+        <Loader type="TailSpin" color="hotpink" height={80} width={100} />
+        </div>
+    )}
 }
 
 export default Lyrics

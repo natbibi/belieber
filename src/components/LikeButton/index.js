@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Counter } from '..'
 
 function LikeButton(props) {
     let [liked, setLiked] = useState('false')
@@ -14,6 +15,9 @@ function LikeButton(props) {
        let albumName = props.name
             console.log(albumName)
             console.log(++likeCounter)
+        
+            let totalLikes = (++likeCounter )
+            console.log(totalLikes)
 
     }
 
@@ -23,6 +27,7 @@ function LikeButton(props) {
         <div className="heart-like">
             <span role="switch" onClick={handleLikeButton} style={{ fontSize: '5rem', color: liked ? 'lightgrey' : 'hotpink' }}><i className="far fa-heart"></i></span>
     <p>{likeCounter} likes </p>
+    <Counter numberOfLikes={likeCounter} />
             
             
         </div>
