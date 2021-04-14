@@ -4,7 +4,7 @@ import './style.css'
 function Footer(){
     return(
         <div>
-            <span id="footer"> copyright Semhar & Natalie </span>
+            <span id="footer"> Created by Semhar & Natalie </span>
         </div>
 
     )
