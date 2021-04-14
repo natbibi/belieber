@@ -1,49 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=News+Cycle&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=News+Cycle&display=swap");
 /* font-family: 'Londrina Sketch', cursive;
 font-family: 'News Cycle', sans-serif; */
 
 .container {
-    display: inline;
-    /* margin: 0.5rem; */
-    margin: auto;
+  display: inline;
+  /* margin: 0.5rem; */
+  margin: auto;
 }
 
 .greeting-container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
-label { display: none; }
+label {
+  display: none;
+}
 
 .row {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-    padding: 2rem;
-    margin: 0.5rem;
+  padding: 2rem;
+  margin: 0.5rem;
 }
 
 h1 {
-    color: lightgreen;
-    text-align: center;
-    font-family: 'News Cycle', sans-serif; 
+  color: lightgreen;
+  text-align: center;
+  font-family: "News Cycle", sans-serif;
 }
 
 p {
-    margin: 20px;
+  margin: 20px;
 }
 
 img {
-    border: solid 2px green;
+  border: solid 2px green;
 }
 
 th {
-    font-family: 'News Cycle', sans-serif;
+  font-family: "News Cycle", sans-serif;
 }
 
 .heart-like {
-    text-align: center;
+  text-align: center;
+}
+
+#back-button {
+  border: solid 4px limegreen;
+  font-size: 2rem;
 }
