@@ -12,8 +12,11 @@ function getPhotos(){
 
     const renderImages = () => {
         return photo.map(p =>
-            <div className="card">
+            <div className="row">
+            <div className="card col-3 border-success mb-4">
+                
                <img src={p.img} className="card-img-top" alt="Justin Bieber"/>
+            </div>
             </div>
             )
     }
