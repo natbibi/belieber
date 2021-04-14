@@ -1,11 +1,10 @@
 import React from 'react'
-import { Bio, Albums, Greeting, Counter } from '../../components'
+import { Albums, Greeting, Counter } from '../../components'
 
 
-const musicPage = () => {
+const JBMusic = () => {
     return (
         <>
-        <Bio />
         <Greeting />
         <Counter />
         <Albums />
@@ -14,4 +13,4 @@ const musicPage = () => {
     )
 }
 
-export default musicPage
+export default JBMusic

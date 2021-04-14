@@ -24,7 +24,7 @@ const AlbumCards = () => {
                     <p className="card-text">{p.releaseDate}</p>
                     <LikeButton name={p.name}/>
                     <Listen songId={p.id}/>
-                    <Lyrics title={p.title} />
+                    {/* <Lyrics title={p.title} /> */}
                     {/* {showLyrics ? <Lyrics title={p.title} close={toggleLyrics}/> : <button onClick={toggleLyrics}>Show me lyrics</button>} */}
                 </div>
             </div>
