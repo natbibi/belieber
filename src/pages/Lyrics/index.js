@@ -25,7 +25,7 @@ function Lyrics(){
     useEffect(() => {
         async function getLyrics(){
             try{
-                let {data} = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${song[i].songTitle} `)
+                let {data} = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${song[0].songTitle} `)
                 // console.log(data.lyrics)
                 setShowLyrics(data.lyrics)
             } catch (err) {
