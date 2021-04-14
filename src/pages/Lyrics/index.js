@@ -3,9 +3,11 @@ import axios from 'axios'
 import Loader from "react-loader-spinner";
 
 function Lyrics(props){
-    const [error, setError ] = useState()
-    const [showLyrics, setShowLyrics] = useState(false)
-    const [hideLyrics, setHideLyrics] = useState()
+console.log(props.title)
+
+const [error, setError ] = useState()
+    const [showLyrics, setShowLyrics] = useState()
+    // const [hideLyrics, setHideLyrics] = useState()
     
 
     useEffect(() => {
@@ -22,33 +24,14 @@ function Lyrics(props){
     }, [])
 
 
-    // const displayLyrics = (e) => {
-    //     e.preventDefault()
-    //     setShowLyrics(showLyrics)
-    // }
-    // const toggleLyrics = (e) => {
-    //     e.stopPropagation()
-    //     setShowLyrics('')
-    //     setHideLyrics('')
-    // }
-    // const hideToggleLyrics = () => setShowLyrics(!showLyrics)
-    
-    function displayLyrics(){
-        
-        return setShowLyrics(true)
-        
-         
-    } 
-
-
-    if(showLyrics == true) { return (<p>{showLyrics}</p>)
-    } else { 
         return (
         <div>
-        <button onClick={displayLyrics} >show lyrics</button>
-        <Loader type="TailSpin" color="hotpink" height={80} width={100} />
+        <p>{showLyrics}</p>
+        
+        {/* <Loader type="TailSpin" color="hotpink" height={80} width={100} /> */}
         </div>
-    )}
+    )
 }
+
 
 export default Lyrics

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {LikeButton, Listen, Lyrics} from '..'
+import {LikeButton, Listen} from '..'
+import {Lyrics } from '../../pages'
 
 
 const AlbumCards = () => {
@@ -14,6 +15,11 @@ const AlbumCards = () => {
     // const [showLyrics, setShowLyrics] = useState()
 
     // const toggleLyrics = () => setShowLyrics(prevState => !prevState)
+    // const albumTitle = () => {
+    //     return album.map(p =>
+    //         <div>{p.title}</div>
+    //     )}
+    //     <Lyrics title={albumTitle}/>
 
     const renderRows = () => {
         return album.map(p =>
@@ -24,7 +30,7 @@ const AlbumCards = () => {
                     <p className="card-text">{p.releaseDate}</p>
                     <LikeButton name={p.name}/>
                     <Listen songId={p.id}/>
-                    {/* <Lyrics title={p.title} /> */}
+                    <Lyrics title={p.title} />
                     {/* {showLyrics ? <Lyrics title={p.title} close={toggleLyrics}/> : <button onClick={toggleLyrics}>Show me lyrics</button>} */}
                 </div>
             </div>
