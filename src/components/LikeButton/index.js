@@ -5,7 +5,7 @@ function LikeButton(props) {
     let [liked, setLiked] = useState('false')
     let [likeCounter, setLikeCounter] = useState(0)
 
-            
+
 
     function handleLikeButton(e) {
         e.stopPropagation()
@@ -25,11 +25,10 @@ function LikeButton(props) {
     return (
 
         <div className="heart-like">
-            <span role="switch" onClick={handleLikeButton} style={{ fontSize: '5rem', color: liked ? 'lightgrey' : 'hotpink' }}><i className="far fa-heart"></i></span>
-    <p>{likeCounter} likes </p>
-    <Counter numberOfLikes={likeCounter} />
-            
-            
+            <span role="switch" onClick={handleLikeButton} style={{ fontSize: '5rem', color: liked ? 'pink' : 'hotpink' }}><i className="far fa-heart"></i></span>
+            <p>{likeCounter} likes </p>
+
+
         </div>
     )
 }
