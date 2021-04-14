@@ -14,6 +14,8 @@ font-family: 'News Cycle', sans-serif; */
     flex-direction: column;
 }
 
+label { display: none; }
+
 .row {
     display: flex;
     justify-content: space-evenly;
