@@ -20,7 +20,7 @@ const Albums = ({ album }) => {
                 {/* <Lyrics title={p.title} /> */}
                 {/* {showLyrics ? <Lyrics title={p.title} close={toggleLyrics}/> : <button onClick={toggleLyrics}>Show me lyrics</button>} */}
                 <div className="topsong-container">
-                <span classname="x-button" onClick={toggleTopsong} style={{ cursor: "pointer" }}>x</span>
+                <span className="x-button" onClick={toggleTopsong} style={{ cursor: "pointer" }}>x</span>
                     {
                         showTopsong ? album.title
                             : <button className="topsong-button" onClick={toggleTopsong}>See Top song of Album!</button>
