@@ -1,4 +1,4 @@
-# Project: Justin Bieber Fan Page 💜 - React
+# Project: Justin Bieber Fan Page - React
 
 📝 [![Netlify Status](https://api.netlify.com/api/v1/badges/53ecd40e-c56b-4812-a00d-8aa87cc11a4c/deploy-status)](https://app.netlify.com/sites/beliebers/deploys) ⚖️  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
