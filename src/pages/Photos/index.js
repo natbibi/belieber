@@ -12,8 +12,10 @@ function getPhotos(){
 
     const renderImages = () => {
         return photo.map(p =>
-            <div className="card">
+            <div className="row">
+            <div className="card border-success col-3">
                <img src={p.img} className="card-img-top" alt="Justin Bieber"/>
+            </div>
             </div>
             )
     }
@@ -31,9 +33,10 @@ console.log(stream)
     return (
         <div>
             <h1>Photo Gallery</h1>
-            <button onClick={setPhoto}>next</button>
+            
             {/* {setPhoto} */}
             {renderImages()}
+            <button onClick={setPhoto}>next</button>
 console.log(renderImages({}))  
         </div>
 
