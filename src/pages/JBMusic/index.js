@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Route, Switch, useHistory, useParams } from 'react-router-dom';
 import { Albums, Song, Counter } from '../../components'
 
 
@@ -18,13 +19,43 @@ const JBMusic = () => {
         );
     }
 
+    const history = useHistory();
+
+    const params = useParams();
+
+    const handleSelect = (id) => {
+        history.push(`albums/${(id) - 1}`)
+    }
+
+    const albumsList = album.map((album) => (
+        <Albums key={album.id} album={album} handleSelect={handleSelect} />
+    ))
+
+
     return (
         <>
-        <h1>Albums</h1>
-        <div className="row">
-            { renderRows()}
-        </div>
-        </>
+            <h1>Albums</h1>
+            
+                {/* {renderRows()} */}
+                
+            <section>
+                {
+                <Switch>
+                    {/* Render props*/}
+                    <Route exact path={"/albums"} render={() => ( <div className="row">{albumsList}</div>)} />
+                    {/* Dynamic route params */}
+
+                    <Route path={"/albums/:id"}render={({ match }) => (
+                            <div className="album-page">
+                                <Albums album={album[match.params.id]} handleSelect={() => { }} />
+                                {/* <Albums album={albums[match.params.id]} /> */}
+                            </div>
+                        )} />
+                </Switch>
+                }
+            </section>
+       
+       </>
     )
 }
 
