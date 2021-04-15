@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Counter } from '..'
 
-function LikeButton(props) {
+function LikeButton() {
     let [liked, setLiked] = useState('false')
     let [likeCounter, setLikeCounter] = useState(randomNumber())
 
@@ -14,14 +14,6 @@ function LikeButton(props) {
         e.stopPropagation()
         setLiked(!liked)
         setLikeCounter(likeCounter + 1)
-
-        let albumName = props.name
-        console.log(albumName)
-        console.log(++likeCounter)
-
-        let totalLikes = (++likeCounter)
-        console.log(totalLikes)
-
     }
 
 
