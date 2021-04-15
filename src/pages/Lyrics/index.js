@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Albums, Song } from '../../components'
+import Loader from 'react-loader-spinner'
 
 
 const Lyrics = () => {
@@ -22,6 +23,32 @@ const Lyrics = () => {
             <h1>Lyrics</h1>
             { renderSongTitle()}
         </>
+
+
+
+
+    useEffect(() => {
+        getLyrics()
+        const stream = setInterval(getLyrics, 2000)
+
+        return () => clearInterval(stream)
+    }, [])
+
+   
+
+//  const lyricString = showLyrics
+// console.log(lyricString.slice(0))
+// console.log(lyricString.slice(1))
+
+
+        return (
+        <div>
+        <h1>{songs}</h1>
+        
+        <p>{showLyrics}</p>
+        
+        <Loader type="Audio" color="hotpink" height={80} width={100} />
+        </div>
     )
 }
 

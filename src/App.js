@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Footer } from './layout'
 import './App.css';
-import { JBMusic, Greeting, Lyrics, Bio, Photos, PageNotFound } from './pages';
+import { JBMusic, LandingPage, Lyrics, Bio, Photos, PageNotFound } from './pages';
 import { Route, Switch } from 'react-router-dom'
 
 function App () { 
@@ -10,7 +10,7 @@ function App () {
        
       <Header />
       <Switch>
-         <Route exact path="/" component={Greeting} />
+         <Route exact path="/" component={LandingPage} />
          <Route path="/albums" component={JBMusic} />
          <Route path="/lyrics" component={Lyrics} />
          <Route path="/bio" component={Bio} />
