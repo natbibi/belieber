@@ -18,4 +18,5 @@ function goToAlbumPage(){
     )
         
     }
+    
 export default goToAlbumPage
