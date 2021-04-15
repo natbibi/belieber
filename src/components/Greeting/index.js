@@ -16,7 +16,7 @@ function Greeting() {
 
     return (
         <div className="greeting-container">
-            <h3 aria-label='greeting' id='greeting'>Hi there, {username ? username : 'belieber'}! </h3>
+            <h3 aria-label='greeting' id='greeting'>Hi there, {username ? username :'belieber'}! </h3>
             <form onSubmit={handleFormSubmit}>
                 <label htmlFor="username"> Username </label>
                 <input type="text" autoComplete="off" name="username" id="username" placeholder="Enter your name" onChange={handleInput} />
