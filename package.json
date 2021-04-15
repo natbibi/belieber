@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
-    "coverage": "jest --setupFilesAfterEnv ./src/test/setupTests.js --coverage --silent --watchAll=false",
     "build": "webpack --config config/webpack.config.production.js",
     "test": "jest --watch --setupFilesAfterEnv ./src/test/setupTests.js"
   },
