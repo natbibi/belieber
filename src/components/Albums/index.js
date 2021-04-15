@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LikeButton, Listen } from '../'
 
 
-const Albums = ({ album }) => {
+const Albums = ({ album, handleSelect }) => {
 
     const [showTopsong, setShowTopsong] = useState();
 
@@ -12,7 +12,8 @@ const Albums = ({ album }) => {
     return (
         // album.map(p =>
         <div className="card col-3">
-            <img src={album.img} className="card-img-top" alt="Album Cover" />
+            <img src={album.img} className="card-img-top" alt="Album Cover" onClick={() => handleSelect(album.id)}></img>
+            
             <div className="card-body">
                 <h5 className="card-title">{album.name}</h5>
                 <p className="card-text">{album.releaseDate}</p>
@@ -27,8 +28,9 @@ const Albums = ({ album }) => {
 
                     }
                 </div>
+                </div>
             </div>
-        </div>
+
     )
 };
 
