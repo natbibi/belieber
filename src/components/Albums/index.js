@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LikeButton, Listen } from '../'
+import { LikeButton } from '../'
 
 
 const Albums = ({ album }) => {
