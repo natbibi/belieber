@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Albums, Greeting, Counter } from '../../components'
+import { Albums, Song, Counter } from '../../components'
 
 
 const JBMusic = () => {
@@ -19,9 +19,12 @@ const JBMusic = () => {
     }
 
     return (
+        <>
+        <h1>Albums</h1>
         <div className="row">
             { renderRows()}
         </div>
+        </>
     )
 }
 
