@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Counter } from '..'
 
 function LikeButton() {
     let [liked, setLiked] = useState('false')
-    let [likeCounter, setLikeCounter] = useState(randomNumber())
+    let [likeCounter, setLikeCounter] = useState(randomLargeNumber())
 
 
-    function randomNumber() {
+    function randomLargeNumber() {
         return Math.floor(Math.random() * 100000)
     }
 
@@ -16,6 +16,17 @@ function LikeButton() {
         setLikeCounter(likeCounter + 1)
     }
 
+    function addRandomNumber() {
+        return Math.floor(Math.random() * 100)
+    }
+
+    useEffect(() => {
+        let randomNum = addRandomNumber()
+        const stream = setInterval(() => {
+            setLikeCounter(likeCounter + randomNum) 
+        }, 1000)
+        return () => clearInterval(stream)
+    })
 
     return (
 
