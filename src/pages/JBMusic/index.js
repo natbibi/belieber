@@ -11,7 +11,7 @@ const JBMusic = () => {
         { id: 5, albumCode: '63iWSELt9V1kV6RSMxN7Ii', name: 'Changes', img: "https://upload.wikimedia.org/wikipedia/en/1/16/Justin_Bieber_-_Changes.png", releaseDate: 2020, title: 'Intentions' },
         { id: 6, albumCode: '6mzpIm84OXCBxw6Tuhp1OA', name: 'Justice', img: "https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png", releaseDate: 2021, title: 'Peaches' }
     ])
-    
+
     const renderRows = () => {
         return album.map(p =>
             <Albums album={p} key={p.id} />
@@ -19,9 +19,12 @@ const JBMusic = () => {
     }
 
     return (
+        <>
+        <h1>Albums</h1>
         <div className="row">
             { renderRows()}
         </div>
+        </>
     )
 }
 
