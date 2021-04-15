@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const Song = ({ album }) => {
+const Song = ({ song }) => {
     const [listen, setListen] = useState()
     const [error, setError] = useState()
 
@@ -9,12 +9,13 @@ const Song = ({ album }) => {
         async function listenToSong() {
             try {
 
-                let { data } = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${album.title}`)
+                let { data } = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${song.songTitle}`)
 
-                console.log(data)
+                // console.log(data)
                 // console.log(data.items)
 
-                setListen(listen)
+                setListen(data.lyrics)
+
 
             } catch (err) {
                 setError(err.message)
@@ -25,7 +26,8 @@ const Song = ({ album }) => {
 
     return (
         <>
-            {album.title}
+            <h2>{song.songTitle}</h2>
+            <p>{listen}</p>
         </>
     )
 
