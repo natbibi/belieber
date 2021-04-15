@@ -27,12 +27,12 @@ const Lyrics = () => {
 
 
 
-    useEffect(() => {
-        getLyrics()
-        const stream = setInterval(getLyrics, 2000)
+    // useEffect(() => {
+    //     getLyrics()
+    //     const stream = setInterval(getLyrics, 2000)
 
-        return () => clearInterval(stream)
-    }, [])
+    //     return () => clearInterval(stream)
+    // }, [])
 
    
 
@@ -41,14 +41,14 @@ const Lyrics = () => {
 // console.log(lyricString.slice(1))
 
 
-        return (
-        <div>
-        <h1>{songs}</h1>
+        // return (
+        // <div>
+        // <h1>{songs}</h1>
         
-        <p>{showLyrics}</p>
+        // <p>{showLyrics}</p>
         
-        <Loader type="Audio" color="hotpink" height={80} width={100} />
-        </div>
+        // <Loader type="Audio" color="hotpink" height={80} width={100} />
+        // </div>
     )
 }
 
