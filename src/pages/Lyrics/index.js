@@ -15,7 +15,9 @@ const Lyrics = () => {
 
     const renderSongTitle = () => {
         return song.map(p =>
-            <Song song={p} key={p.id} />
+            <div className="lyric-container">
+               <Song song={p} key={p.id} />
+               </div>
         );
     }
     return (
