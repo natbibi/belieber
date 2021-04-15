@@ -1,14 +1,16 @@
 import {screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import { MemoryRouter } from 'react-router-dom';
 import BackButton from './'
 
 describe('BackButton', () => {
     beforeEach(() => {
-        render(<BackButton />)
+        render(<BackButton />, { wrapper: MemoryRouter })
 })
 
 test("to have a back button", () =>{
-    const backBttn = screen.getByRole('button', {name: 'back-button'})
-    expect(backBttn.textContent).toBeInTheDocument()
+    const backBttn = screen.findByRole("button")
+    expect(backBttn).toBeInTheDocument()
     expect(backBttn.textContent).toContain('🔙 ')
 })
 

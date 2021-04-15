@@ -15,12 +15,12 @@ function LikeButton(props) {
         setLiked(!liked)
         setLikeCounter(likeCounter + 1)
 
-        let albumName = props.name
-        console.log(albumName)
-        console.log(++likeCounter)
+        // let albumName = props.name
+        // console.log(albumName)
+        // console.log(++likeCounter)
 
-        let totalLikes = (++likeCounter)
-        console.log(totalLikes)
+        // let totalLikes = (++likeCounter)
+        // console.log(totalLikes)
 
     }
 
