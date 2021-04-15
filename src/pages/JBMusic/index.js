@@ -18,17 +18,13 @@ const JBMusic = () => {
         );
     }
 
-    const renderSongTitle = () => {
-        return album.map(p =>
-            <Song album={p} key={p.id} />
-        );
-    }
-
     return (
+        <>
+        <h1>Albums</h1>
         <div className="row">
             { renderRows()}
-            { renderSongTitle()}
         </div>
+        </>
     )
 }
 
