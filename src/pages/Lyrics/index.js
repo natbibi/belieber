@@ -1,31 +1,26 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import Loader from 'react-loader-spinner'
 
 
 function Lyrics(){
-    const [song, setSong] = useState([
-        { id: 1, songTitle: 'Baby' },
-        { id: 2, songTitle: 'Mistletoe' },
-        { id: 3, songTitle: 'Boyfriend' },
-        { id: 4, songTitle: 'Love-yourself' },
-        { id: 5, songTitle: 'Intentions' },
-        { id: 6, songTitle: 'Peaches' },
-    ])
-    const [showLyrics, setShowLyrics] = useState()
+    const [song, setSong] = useState(['Baby', 'Mistletoe', 'Boyfriend', 'Love-yourself', 'Intentions', 'Peaches'])
+    const [showLyrics, setShowLyrics] = useState(false)
     const [error, setError ] = useState()
-    console.log(song[0].songTitle)
-    
+    // console.log(song[0].songTitle)
+    const songs = song.forEach(element => console.log(element))
+    console.log(songs)
 
-    const renderLyrics = () => {
-        song.map(p =>
-        <p> {p.songTitle}</p>
-            )
-    } 
+    // const renderLyrics = () => {
+    //     song.map(p =>
+    //     <p> {p.songTitle}</p>
+    //         )
+    // } 
 
     useEffect(() => {
         async function getLyrics(){
             try{
-                let {data} = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${song[0].songTitle} `)
+                let {data} = await axios.get(`https://api.lyrics.ovh/v1/justin-bieber/${songs}`)
                 // console.log(data.lyrics)
                 setShowLyrics(data.lyrics)
             } catch (err) {
@@ -33,15 +28,25 @@ function Lyrics(){
             }
         }
         getLyrics()
+        const stream = setInterval(getLyrics, 2000)
+
+        return () => clearInterval(stream)
     }, [])
+
+   
+
+//  const lyricString = showLyrics
+// console.log(lyricString.slice(0))
+// console.log(lyricString.slice(1))
 
 
         return (
         <div>
-        <p>{song[0].songTitle}</p>
+        <h1>{songs}</h1>
+        
         <p>{showLyrics}</p>
         
-        {/* <Loader type="TailSpin" color="hotpink" height={80} width={100} /> */}
+        <Loader type="Audio" color="hotpink" height={80} width={100} />
         </div>
     )
 }
