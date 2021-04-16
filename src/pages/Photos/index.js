@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from 'react'
-
+import React, {useState} from 'react'
+import {GetIndividualPhoto} from '../../components'
+import { useHistory, useParams, Switch, Route  } from 'react-router-dom';
+// import Switch from 'react-bootstrap/esm/Switch';
 
 function getPhotos(){
     const [photo, setPhoto ] = useState([
@@ -10,34 +12,36 @@ function getPhotos(){
         {id: 5, img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F12%2Fgettyimages-498329596-1-2000.jpg"}
     ])
 
+    let { id } = useParams()
+    const prevPhoto = () => history.push(`/photos/${id}`)
+     
     const renderImages = () => {
         return photo.map(p =>
-            <div className="row">
-            <div className="card border-success col-3">
-               <img src={p.img} className="card-img-top" alt="Justin Bieber"/>
-            </div>
-            </div>
+               <GetIndividualPhoto id={id} photoById={p.id} photo={p}/>
+            
             )
     }
- 
-   useEffect(() => { 
-    renderImages()
-
-        const stream = setInterval(renderImages, 10000)
-console.log(stream)
-        return () => clearInterval(stream)
-
-    }, [])
-
+        const history = useHistory();
+        const loadImage = id => history.push(`/photos/${photo.id}`)
 
     return (
         <div>
-            <h1>Photo Gallery</h1>
+            <aside>
+            {/* <NextButton handlePhotos={loadImage}/> */}
+            </aside>
+            <section>
+                <h1>Photo Gallery</h1>
+                {/* {setPhoto} */}
+                    <Switch>
+                    <Route exact path={"/photos"} component={renderImages}/>
+                    {/* <Route path={"/photos/:id"}  componenet={GetIndividualPhoto}/> */}
+                    </Switch>
+
             
-            {/* {setPhoto} */}
             {renderImages()}
-            <button onClick={setPhoto}>next</button>
-console.log(renderImages({}))  
+            </section>
+            
+  
         </div>
 
     )
