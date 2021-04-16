@@ -63,6 +63,8 @@ It should automatically open up on your browser at 0.0.0.0:8080
 5. Set up layout- header and footer
 6. Create paths for each 'page', restructure files and refactor code
 7. Add :id paths
+8. Add show/hide buttons
+9. Add intervals
 
 
 # Bugs 
@@ -71,6 +73,8 @@ It should automatically open up on your browser at 0.0.0.0:8080
 - [x] Lyrics only showing for first song
 - [x] /:id not working
 - [ ] Header and footer spilling over width of page / bottom scroll visible
+- [ ] Lyrics show/hide button click affects all of the same button 
+- [x] Quiz interval bug
 
 # Wins & Challenges 
 
