@@ -21,7 +21,7 @@ Clone this repo and navigate to the root directory of this repo.
 To start up our react app:  
 `npm run dev`    
 
-It should open up on your browser at 0.0.0.0:8080   
+It should automatically open up on your browser at 0.0.0.0:8080   
 
 # Technologies
 
@@ -62,12 +62,15 @@ It should open up on your browser at 0.0.0.0:8080
 4. API fetch using axios
 5. Set up layout- header and footer
 6. Create paths for each 'page', restructure files and refactor code
-7. 
+7. Add :id paths
+
 
 # Bugs 
 - [ ] Spotify API token refreshes and doesn't allow access to API
 - [x] Show / hide buttons not working on album page
-- [ ] Lyrics only showing for first song
+- [x] Lyrics only showing for first song
+- [x] /:id not working
+- [ ] Header and footer spilling over width of page / bottom scroll visible
 
 # Wins & Challenges 
 

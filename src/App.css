@@ -14,6 +14,12 @@ font-family: 'News Cycle', sans-serif; */
   flex-direction: column;
 }
 
+.lyric-container {
+  border: 2px solid rgb(222, 255, 222);
+  margin: 40px;
+  padding: 20px;
+}
+
 label {
   display: none;
 }
