@@ -2,10 +2,18 @@
 /* font-family: 'Londrina Sketch', cursive;
 font-family: 'News Cycle', sans-serif; */
 
+:root {
+  --secondary: #caf7e3;
+  --background: #edffec;
+  --primary: #e4bad4;
+  --tertiary: #f6dfeb;
+}
+
 .container {
   display: inline;
   /* margin: 0.5rem; */
   margin: auto;
+  background-color: var(--background);
 }
 
 .greeting-container {
@@ -15,7 +23,7 @@ font-family: 'News Cycle', sans-serif; */
 }
 
 .lyric-container {
-  border: 2px solid rgb(222, 255, 222);
+  border: 2px solid var(--tertiary);
   margin: 40px;
   padding: 20px;
 }
@@ -35,14 +43,20 @@ label {
 }
 
 h1 {
-  color: lightgreen;
+  margin-top: 4rem;
+  color: var(--primary);
   text-align: center;
   font-family: "News Cycle", sans-serif;
 }
 
+h2 {
+  color: var(--secondary);
+  text-align: center;
+  font-family: "News Cycle", sans-serif;
+}
 h3 {
   margin-top: 4rem;
-  color: lightcoral;
+  color: var(--secondary);
   text-align: center;
   font-family: "News Cycle", sans-serif;
 }
@@ -52,7 +66,7 @@ p {
 }
 
 img {
-  border: solid 2px green;
+  border: solid 2px var(--secondary);
 }
 
 th {
@@ -72,8 +86,9 @@ th {
 }
 
 #back-button {
-  border: solid 4px limegreen;
-  font-size: 2rem;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
 }
 
 .topsong-button {
@@ -82,4 +97,25 @@ th {
 
 .x-button {
   color: red;
+}
+
+.form-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.update-bttn {
+  margin-left: 1rem;
+}
+
+.explore-bttn {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 30px;
 }
