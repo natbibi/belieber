@@ -4,7 +4,10 @@ import Loader from 'react-loader-spinner'
 
 
 const Lyrics = () => {
-    const [song, setSong] = useState([
+    const [showLyrics, setShowLyrics] = useState(false);
+    const toggleLyrics = () => setShowLyrics(prevState => !prevState)
+
+    const song = ([
         { id: 1, songTitle: 'Baby' },
         { id: 2, songTitle: 'Mistletoe' },
         { id: 3, songTitle: 'Boyfriend' },
@@ -16,7 +19,8 @@ const Lyrics = () => {
     const renderSongTitle = () => {
         return song.map(p =>
             <div className="lyric-container">
-                <Song song={p} key={p.id} />
+                <h1>{p.songTitle}</h1>
+                {showLyrics ? <Song key={p.id} songTitle={p.songTitle} close={toggleLyrics} /> : <button className="topsong-button" onClick={toggleLyrics}>Sing Along!</button>}
             </div>
         );
     }
