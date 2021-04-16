@@ -26,6 +26,9 @@ font-family: 'News Cycle', sans-serif; */
   border: 2px solid var(--tertiary);
   margin: 40px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .album-page {
@@ -98,6 +101,7 @@ th {
 
 .topsong-button {
   border: none;
+  margin-top: 10px;
 }
 
 .x-button {
