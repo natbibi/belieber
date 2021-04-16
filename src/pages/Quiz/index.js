@@ -76,9 +76,12 @@ function Quiz() {
   return (
     <div>
       <h1>How well do you know JB?</h1>
-
       <h3 id="question">{facts[index].question}</h3>
-      <p id="reveal-answer"> {facts[index].answer}</p>
+      <p className="hover-to-reveal">questons change every 10 seconds</p>
+      <p className="hover-to-reveal">hover to reveal answer</p>
+      <p className="answer">
+        answer:<span id="reveal-answer"> {facts[index].answer}</span>
+      </p>
     </div>
   );
 }

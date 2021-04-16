@@ -5,14 +5,24 @@
 
 #reveal-answer:hover {
   visibility: visible;
-  display: block;
+  transform: scale(3);
+}
+#reveal-answer {
+  /* visibility: hidden; */
+  font-size: 1px;
+}
+
+.answer {
+  text-align: center;
   color: lightgreen;
   font-size: 20px;
   cursor: pointer;
-  transform: scale(2);
+  /* display: none; */
 }
 
-#reveal-answer {
-  visibility: hidden;
-  /* display: none; */
+.hover-to-reveal {
+  margin-top: 2rem;
+  font-size: 10px;
+  text-align: center;
+  color: gray;
 }
