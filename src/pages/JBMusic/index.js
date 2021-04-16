@@ -13,12 +13,6 @@ const JBMusic = () => {
         { id: 6, albumCode: '3BmcYMh0KYsimWL6p2gPa9', name: 'My World 2.0', img: "https://upload.wikimedia.org/wikipedia/en/b/b9/Myworld2.jpg", releaseDate: 2010, title: 'Baby' }
     ])
 
-    const renderRows = () => {
-        return album.map(p =>
-            <Albums album={p} key={p.id} />
-        );
-    }
-
     const history = useHistory();
 
     const params = useParams();
@@ -35,9 +29,6 @@ const JBMusic = () => {
     return (
         <>
             <h1>Albums</h1>
-
-            {/* {renderRows()} */}
-
             <section>
                 {
                     <Switch>
@@ -48,7 +39,6 @@ const JBMusic = () => {
                         <Route path={"/albums/:id"} render={({ match }) => (
                             <div className="album-page">
                                 <Albums album={album[match.params.id]} handleSelect={() => { }} />
-                                {/* <Albums album={albums[match.params.id]} /> */}
                             </div>
                         )} />
                     </Switch>
