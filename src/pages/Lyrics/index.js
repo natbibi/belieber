@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Albums } from '../../components'
+import { Song } from '../../components'
 import Loader from 'react-loader-spinner'
 
 
@@ -16,8 +16,8 @@ const Lyrics = () => {
     const renderSongTitle = () => {
         return song.map(p =>
             <div className="lyric-container">
-               <Song song={p} key={p.id} />
-               </div>
+                <Song song={p} key={p.id} />
+            </div>
         );
     }
     return (
@@ -29,26 +29,26 @@ const Lyrics = () => {
 
 
 
-    // useEffect(() => {
-    //     getLyrics()
-    //     const stream = setInterval(getLyrics, 2000)
+        // useEffect(() => {
+        //     getLyrics()
+        //     const stream = setInterval(getLyrics, 2000)
 
-    //     return () => clearInterval(stream)
-    // }, [])
+        //     return () => clearInterval(stream)
+        // }, [])
 
-   
 
-//  const lyricString = showLyrics
-// console.log(lyricString.slice(0))
-// console.log(lyricString.slice(1))
+
+        //  const lyricString = showLyrics
+        // console.log(lyricString.slice(0))
+        // console.log(lyricString.slice(1))
 
 
         // return (
         // <div>
         // <h1>{songs}</h1>
-        
+
         // <p>{showLyrics}</p>
-        
+
         // <Loader type="Audio" color="hotpink" height={80} width={100} />
         // </div>
     )
