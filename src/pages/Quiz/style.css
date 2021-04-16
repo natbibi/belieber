@@ -1,0 +1,18 @@
+/* .reveal-answer {
+  display: none;
+
+} */
+
+#reveal-answer:hover {
+  visibility: visible;
+  display: block;
+  color: lightgreen;
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+#reveal-answer {
+  visibility: hidden;
+  /* display: none; */
+}
