@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Albums, Song } from '../../components'
+import { Albums } from '../../components'
 import Loader from 'react-loader-spinner'
 
 

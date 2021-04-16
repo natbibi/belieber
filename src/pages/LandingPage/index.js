@@ -9,6 +9,7 @@ function LandingPage() {
         <div >
             <Greeting />
             <ExploreButton />
+            
         </div>
 
     )
