@@ -1,20 +1,27 @@
+:root {
+  --secondary: #caf7e3;
+  --background: #edffec;
+  --primary: #e4bad4;
+  --tertiary: #f6dfeb;
+}
 nav {
   width: 100vw;
-  background-color: beige;
+  background-color: var(--secondary);
   padding: 30px;
   display: flex;
   justify-content: space-around;
-  color: grey;
+  color: var(--secondary);
 }
 a {
   text-decoration: none;
+  color: var(--primary);
 }
 a:hover {
-  color: black;
+  color: var(--background);
   text-decoration: none;
   cursor: pointer;
 }
 .current {
-  color: black;
+  color: var(--background);
   font-weight: bolder;
 }
