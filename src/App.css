@@ -28,6 +28,11 @@ font-family: 'News Cycle', sans-serif; */
   padding: 20px;
 }
 
+.album-page {
+  display: flex;
+  justify-content: center;
+}
+
 label {
   display: none;
 }
