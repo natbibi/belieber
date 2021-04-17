@@ -43,6 +43,7 @@ label {
 .row {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 80px;
 }
 
 .card {
