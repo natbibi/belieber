@@ -9,7 +9,7 @@ font-family: 'News Cycle', sans-serif; */
   --tertiary: #f6dfeb;
 }
 
-.container {
+.main-container {
   display: inline;
   /* margin: 0.5rem; */
   margin: auto;
