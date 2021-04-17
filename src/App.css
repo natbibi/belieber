@@ -7,6 +7,7 @@ font-family: 'News Cycle', sans-serif; */
   --background: #edffec;
   --primary: #e4bad4;
   --tertiary: #f6dfeb;
+  overflow-x: hidden;
 }
 
 .main-container {
