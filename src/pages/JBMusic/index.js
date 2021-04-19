@@ -24,13 +24,21 @@ const JBMusic = () => {
 
 
     const prevAlbum = (id) => {
-        history.push(`/albums/${(id.id -1)}`)
-        console.log(id)
+        if (id.id <= 1) {
+            history.push(`/albums/1`)
+        } else {
+            history.push(`/albums/${(id.id - 1)}`)
+        }
     }
 
     const nextAlbum = (id) => {
-        history.push(`/albums/${(id.id)}`)
-        console.log(id)
+        if (id === undefined) {
+            history.push(`/albums/6`)
+            console.log('hiya')
+        } else {
+            history.push(`/albums/${(id.id)}`)
+            console.log(id)
+        }
     }
 
     const albumsList = album.map((album) => (
