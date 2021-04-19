@@ -41,24 +41,24 @@ function Quiz() {
     },
     {
       id: 7,
-      question: "Which TV show did Justin guest star in?",
-      answer: "C.S.I",
+      question: "He won his first Grammy award in 2015 for what song?",
+      answer: "Where Are Ü Now",
     },
     {
       id: 8,
-      question: "Which TV show did Justin guest star in?",
-      answer: "C.S.I",
+      question: "What was the profession of Justin’s father?",
+      answer: "MMA fighter",
     },
     {
       id: 9,
-      question: "Which TV show did Justin guest star in?",
-      answer: "C.S.I",
+      question: "What was the first single released from his album, “Purpose?”",
+      answer: "What Do You Mean",
     },
 
     {
       id: 10,
-      question: "Which TV show did Justin guest star in?",
-      answer: "C.S.I",
+      question: "What is Justin’s star sign?",
+      answer: "Pisces",
     },
   ];
 
@@ -75,13 +75,15 @@ function Quiz() {
 
   return (
     <div>
-      <h1>How well do you know JB?</h1>
-      <h3 id="question">{facts[index].question}</h3>
-      <p className="hover-to-reveal">questons change every 10 seconds</p>
-      <p className="hover-to-reveal">hover to reveal answer</p>
-      <p className="answer">
-        answer:<span id="reveal-answer"> {facts[index].answer}</span>
+      <h1>Are you a true Belieber?</h1>
+      <p className="hover-to-reveal">
+        Questons change every 10 seconds, hover to reveal answer
       </p>
+
+      <h3 id="question">{facts[index].question}</h3>
+
+      {/* <span className="answer">hover over to reveal answer: </span> */}
+      <p id="reveal-answer"> {facts[index].answer}</p>
     </div>
   );
 }

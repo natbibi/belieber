@@ -4,21 +4,24 @@
 } */
 
 #reveal-answer:hover {
-  visibility: visible;
-  transform: scale(3);
+  /* visibility: visible; */
+  transform: scale(8);
 }
 #reveal-answer {
   /* visibility: hidden; */
-  font-size: 1px;
+  font-size: 2px;
+  color: limegreen;
+  text-align: center;
+  margin: 40px;
 }
 
-.answer {
+/* .answer {
   text-align: center;
   color: lightgreen;
   font-size: 20px;
   cursor: pointer;
-  /* display: none; */
-}
+  
+} */
 
 .hover-to-reveal {
   margin-top: 2rem;
