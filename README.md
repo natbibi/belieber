@@ -65,16 +65,18 @@ It should automatically open up on your browser at 0.0.0.0:8080
 7. Add :id paths
 8. Add show/hide buttons
 9. Add intervals
-
+10. Add styling based on a colorhunt theme 
 
 # Bugs 
 - [ ] Spotify API token refreshes and doesn't allow access to API
 - [x] Show / hide buttons not working on album page
 - [x] Lyrics only showing for first song
 - [x] /:id not working
-- [ ] Header and footer spilling over width of page / bottom scroll visible
+- [x] Header and footer spilling over width of page / bottom scroll visible
 - [ ] Lyrics show/hide button click affects all of the same button 
 - [x] Quiz interval bug
+- [x] Error handing for non-existent id's not working properly
+- [ ] Unavailable :id paths needs not directing to PageNotFound (shows blank page)
 
 # Wins & Challenges 
 
