@@ -34,10 +34,8 @@ const JBMusic = () => {
     const nextAlbum = (id) => {
         if (id === undefined) {
             history.push(`/albums/6`)
-            console.log('hiya')
         } else {
             history.push(`/albums/${(id.id)}`)
-            console.log(id)
         }
     }
 
