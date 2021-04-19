@@ -15,7 +15,7 @@ const JBMusic = () => {
 
     const history = useHistory();
 
-
+    const params = useParams();
 
     const handleSelect = (id) => {
         history.push(`albums/${(id)}`)
