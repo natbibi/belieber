@@ -7,9 +7,10 @@ font-family: 'News Cycle', sans-serif; */
   --background: #edffec;
   --primary: #e4bad4;
   --tertiary: #f6dfeb;
+  overflow-x: hidden;
 }
 
-.container {
+.main-container {
   display: inline;
   /* margin: 0.5rem; */
   margin: auto;
@@ -43,6 +44,7 @@ label {
 .row {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 80px;
 }
 
 .card {
@@ -127,4 +129,8 @@ th {
   margin: auto;
   margin-top: 2rem;
   padding: 30px;
+}
+
+#loading {
+  text-align: center;
 }

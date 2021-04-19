@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Song } from '../../components'
-import Loader from 'react-loader-spinner'
+// import Loader from 'react-loader-spinner'
 
 
 const Lyrics = () => {
