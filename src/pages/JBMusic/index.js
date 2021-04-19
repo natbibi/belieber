@@ -15,10 +15,15 @@ const JBMusic = () => {
 
     const history = useHistory();
 
-    const params = useParams();
+
 
     const handleSelect = (id) => {
         history.push(`albums/${(id)}`)
+    }
+
+
+    const prevAlbum = (id) => {
+        history.push(`/albums/${(id.id -2)}`)
     }
 
     const albumsList = album.map((album) => (
@@ -38,9 +43,9 @@ const JBMusic = () => {
 
                         <Route path={"/albums/:id"} render={({ match }) => (
                             <div className="album-page">
-                                <button>prev</button>
+                                <button className="album-nav" onClick={() => prevAlbum(album[match.params.id])}>prev</button>
                                 <Albums album={album[match.params.id - 1]} handleSelect={() => { }} />
-                                <button>next</button>
+                                <button className="album-nav">next</button>
                             </div>
                         )} />
                     </Switch>
