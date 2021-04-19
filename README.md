@@ -78,6 +78,7 @@ It should automatically open up on your browser at 0.0.0.0:8080
 - [x] Error handing for non-existent id's not working properly
 - [ ] Unavailable :id paths needs not directing to PageNotFound (shows blank page)
 - [ ] When using explore button on homepage - Explore button(?) appears at the end of albums page 
+- [ ] activeClassName with NavLink doesn't work
 
 # Wins & Challenges 
 
