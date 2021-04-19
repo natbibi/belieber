@@ -37,6 +37,10 @@ font-family: 'News Cycle', sans-serif; */
   justify-content: center;
 }
 
+.album-nav {
+  border: none;
+}
+
 label {
   display: none;
 }
