@@ -8,9 +8,7 @@ A react website to discover Justin Biebers albums, song lyrics, bio and photos.
 
 Built by Justin Bieber's BIGGEST fans. Find all the latest news and info related to the World's Most Popular Artist. 
 
-(add screenshot here)
-<img width="1000" alt="jb-screenshot" src="">
-  
+<img width="800" alt="Screenshot 2021-04-22 at 10 23 58" src="https://user-images.githubusercontent.com/58271566/115690469-fea8fc80-a354-11eb-9215-eaf38b98c5c0.png">
   
 # Installation & usage
 
