@@ -2,7 +2,7 @@
 
 📝 [![Netlify Status](https://api.netlify.com/api/v1/badges/53ecd40e-c56b-4812-a00d-8aa87cc11a4c/deploy-status)](https://app.netlify.com/sites/beliebers/deploys)
 
-A react website to discover Justin Biebers albums, song lyrics, bio and photos. 
+A react website to discover all about Justin Bieber; including albums, bio, photos and song lyrics from an API. There is also a quiz where you can test your JB knowlege and see if you are a true fan!
 
 # Description
 
