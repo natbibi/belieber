@@ -4,7 +4,7 @@
 
 A react website to discover all about Justin Bieber; including albums, bio, photos and song lyrics from an API. There is also a quiz where you can test your JB knowlege and see if you are a true fan!
 
-# Description
+## Description
 
 Built by Justin Bieber's BIGGEST fans. Find all the latest news and info related to the World's Most Popular Artist. 
 
@@ -65,7 +65,7 @@ It should automatically open up on your browser at 0.0.0.0:8080
 9. Add intervals
 10. Add styling based on a colorhunt theme 
 
-# Bugs 
+## Bugs 
 - [ ] Spotify API token refreshes and doesn't allow access to API
 - [x] Show / hide buttons not working on album page
 - [x] Lyrics only showing for first song
@@ -78,15 +78,15 @@ It should automatically open up on your browser at 0.0.0.0:8080
 - [ ] When using explore button on homepage - Explore button(?) appears at the end of albums page 
 - [ ] activeClassName with NavLink doesn't work
 
-# Wins & Challenges 
+## Wins & Challenges 
 
-## Wins 
+### Wins 
 - Gaining abetter understanding of react props and file structure and recognising flaws in our code
 
-## Challenges 
+### Challenges 
 - Trouble understanding react file structure which caused problems on expanding application. Needed a code refactor.
 
-# Code Snippet
+## Code Snippet
 (insert proud code here)
 
 # Future Features
